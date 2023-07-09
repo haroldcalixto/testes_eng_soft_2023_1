@@ -1,0 +1,23 @@
+/**
+* Simulates the behavior of the dispenser component
+* of a vending machine. A given item is dispensed when
+* there is enough credit to buy it and the selected
+* item is valid and available.
+*
+* @param credit - the current value in cents in the coin
+*                 compartment. A value of 50 is necessary
+*                 to buy any item.
+*
+* @param sel - the selected item. A valid item is a
+*              integer number x, such that 1 <= x <= 20.
+*
+* @return the value of the item (expense). Currently is always 50.
+*
+* @throws NoCoinsException when no coin has been inserted.
+* @throws InvalidItemException when the selected item is invalid.
+* @throws UnavailableItemException when the selected item
+*         is valid but is currently unavailable.
+* @throws  NotEnoughtCreditException when the selected item is
+*         invalid but the credit is not enough to buy it.
+*/
+public int dispense( int credit, int sel ) {...}
